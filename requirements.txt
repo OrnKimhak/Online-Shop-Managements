@@ -1,0 +1,4 @@
+jango>=5.0,<=6.1.1
+jangorestframework-3.18.1 
+djangorestframework-simplejwt-5.5.1 
+pyjwt-2.14.0
