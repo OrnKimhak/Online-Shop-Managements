@@ -9,6 +9,11 @@ class CategoriesSerializer(serializers.ModelSerializer):
         fields = '__all__'
 # Product Serializer ================================
 class ProductSerializer(serializers.ModelSerializer):
+
     class Meta:
         model = Product
         fields = '__all__'
+
+
+    # Change categories number to name of categories
+    # categories = serializers.ReadOnlyField(source = "categories.name")

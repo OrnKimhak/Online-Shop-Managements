@@ -23,5 +23,6 @@ urlpatterns = [
     path('api/auth/', include('accounts.urls')),
 
     # Product api 
-    path("api/", include("products.urls"))
+    path("api/", include("online_shop.api_urls")),
+    # path("order/", include("orders.urls")),
 ]

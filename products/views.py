@@ -14,9 +14,9 @@ class ProductViewSet(viewsets.ModelViewSet):
     serializer_class = ProductSerializer
 
     # function for filter product by name
-    def get_queryset(self):
-        name = self.request.query_params.get("name")
-        return Product.objects.filter(name__icontains=name)
+    # def get_queryset(self):
+    #     # name = self.request.query_params.get("name")
+    #     return Product.objects.filter(name = self.request.query_params.get("name"))
 
     def perform_create(self, serializer):
         return super().perform_create(serializer)
